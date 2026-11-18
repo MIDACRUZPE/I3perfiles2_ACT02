@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica de Hojas de Vida: Del Adjetivo al Desempeño | Instituto i3</title>
+  <style>
+    body {
+      font-family: ui-rounded, 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .sticker-card {
+      border: 4px solid #ffffff;
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.14), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+      border-radius: 1.5rem;
+    }
+    .comic-bubble {
+      border-radius: 1.75rem;
+      border: 3px solid rgba(15, 23, 42, 0.12);
+      box-shadow: 4px 6px 0px rgba(15, 23, 42, 0.12);
+    }
+    .i3-spiral {
+      animation: spinSlow 24s linear infinite;
+    }
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .organic-wave {
+      background-image: radial-gradient(circle at 12% 18%, rgba(250, 204, 21, 0.22) 0%, transparent 32%),
+                        radial-gradient(circle at 88% 42%, rgba(6, 182, 212, 0.16) 0%, transparent 36%),
+                        radial-gradient(circle at 20% 82%, rgba(124, 58, 237, 0.12) 0%, transparent 35%);
+    }
+    textarea, input, select {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    textarea:focus, input:focus, select:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+      border-color: #7c3aed;
+    }
+    /* Encabezado fijo solo en pantallas grandes y con altura suficiente */
+    header.hdr-sticky { position: relative; }
+    @media (min-width: 48em) and (min-height: 37.5em) {
+      header.hdr-sticky { position: sticky; top: 0; }
+    }
+    /* iOS: 16px evita el zoom automático al enfocar un campo */
+    @media (max-width: 47.99em) {
+      input, textarea, select { font-size: 16px !important; }
+    }
+    .sr-only-file { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    label:focus-within, button:focus-visible { outline: 3px solid #7c3aed; outline-offset: 2px; }
+    main { min-width: 0; width: 100%; }
+    body h1, body h2, body h3, body h4, body label, body p, body li, body span, body strong { overflow-wrap: anywhere; }
+    @media (prefers-reduced-motion: reduce) {
+      .i3-spiral, .animate-pulse { animation: none !important; }
+    }
+  </style>
+<style>*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-1\.5 {
+  margin-bottom: 0.375rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-2\.5 {
+  height: 0.625rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.min-w-0 {
+  min-width: 0px;
+}
+
+.min-w-\[8rem\] {
+  min-width: 8rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-divide-opacity, 1));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-cyan-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 211 238 / var(--tw-border-opacity, 1));
+}
+
+.border-lime-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(163 230 53 / var(--tw-border-opacity, 1));
+}
+
+.border-lime-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(132 204 22 / var(--tw-border-opacity, 1));
+}
+
+.border-orange-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity, 1));
+}
+
+.border-pink-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 207 232 / var(--tw-border-opacity, 1));
+}
+
+.border-pink-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 168 212 / var(--tw-border-opacity, 1));
+}
+
+.border-pink-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 114 182 / var(--tw-border-opacity, 1));
+}
+
+.border-pink-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(236 72 153 / var(--tw-border-opacity, 1));
+}
+
+.border-pink-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(219 39 119 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(192 132 252 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 85 247 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 51 234 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 33 168 / var(--tw-border-opacity, 1));
+}
+
+.border-purple-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 28 135 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity, 1));
+}
+
+.border-slate-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 6 23 / var(--tw-border-opacity, 1));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.border-white\/30 {
+  border-color: rgb(255 255 255 / 0.3);
+}
+
+.border-white\/40 {
+  border-color: rgb(255 255 255 / 0.4);
+}
+
+.border-yellow-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 224 71 / var(--tw-border-opacity, 1));
+}
+
+.border-yellow-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
+}
+
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity, 1));
+}
+
+.bg-cyan-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cyan-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 254 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cyan-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 182 212 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 252 203 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 254 231 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-600\/70 {
+  background-color: rgb(234 88 12 / 0.7);
+}
+
+.bg-pink-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 242 248 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-900\/90 {
+  background-color: rgb(88 28 135 / 0.9);
+}
+
+.bg-purple-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 7 100 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple-950\/90 {
+  background-color: rgb(59 7 100 / 0.9);
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white\/90 {
+  background-color: rgb(255 255 255 / 0.9);
+}
+
+.bg-yellow-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-cyan-500 {
+  --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-lime-400 {
+  --tw-gradient-to: rgb(163 230 53 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #a3e635 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-yellow-400 {
+  --tw-gradient-to: #facc15 var(--tw-gradient-to-position);
+}
+
+.p-2\.5 {
+  padding: 0.625rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-3\.5 {
+  padding: 0.875rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.text-cyan-300 {
+  --tw-text-opacity: 1;
+  color: rgb(103 232 249 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-300 {
+  --tw-text-opacity: 1;
+  color: rgb(190 242 100 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-900 {
+  --tw-text-opacity: 1;
+  color: rgb(54 83 20 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-50 {
+  --tw-text-opacity: 1;
+  color: rgb(255 247 237 / var(--tw-text-opacity, 1));
+}
+
+.text-pink-600 {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity, 1));
+}
+
+.text-pink-900 {
+  --tw-text-opacity: 1;
+  color: rgb(131 24 67 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 232 255 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-200 {
+  --tw-text-opacity: 1;
+  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-900 {
+  --tw-text-opacity: 1;
+  color: rgb(88 28 135 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-600 {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-950 {
+  --tw-text-opacity: 1;
+  color: rgb(2 6 23 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-900 {
+  --tw-text-opacity: 1;
+  color: rgb(113 63 18 / var(--tw-text-opacity, 1));
+}
+
+.opacity-85 {
+  opacity: 0.85;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:bg-cyan-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-purple-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-yellow-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-yellow-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}</style></head>
+<body class="organic-wave min-h-screen flex flex-col">
+
+  <!-- NAVBAR FIJA INSTITUTO i3 -->
+  <header class="hdr-sticky relative z-50 bg-purple-900 text-white shadow-xl border-b-4 border-yellow-400">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <!-- Marca i3 -->
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-white flex items-center justify-center shadow-md border-2 border-yellow-400 shrink-0">
+          <svg class="w-8 h-8 i3-spiral" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8C18.745 8 8 18.745 8 32C8 43.2 15.67 52.61 26.05 55.26" stroke="#F97316" stroke-width="6" stroke-linecap="round"/>
+            <path d="M32 56C45.255 56 56 45.255 56 32C56 20.8 48.33 11.39 37.95 8.74" stroke="#06B6D4" stroke-width="6" stroke-linecap="round"/>
+            <path d="M20 32C20 25.373 25.373 20 32 20C38.627 20 44 25.373 44 32C44 38.627 38.627 44 32 44" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="4.5" fill="#FACC15"/>
+          </svg>
+        </div>
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-xl font-black tracking-tight lowercase text-yellow-400">instituto i3</span>
+            <span class="text-[11px] font-extrabold uppercase tracking-wider bg-cyan-500 text-slate-950 px-2.5 py-0.5 rounded-full">inclusión • inflexión • impacto</span>
+          </div>
+          <p class="text-xs sm:text-sm font-bold text-purple-100">Módulo 2: Estructuración de Perfiles • Sesión 2</p>
+        </div>
+      </div>
+
+      <!-- Barra de Herramientas y Respaldo -->
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+        <div id="autosave-badge" class="flex items-center gap-1.5 bg-purple-800 border border-purple-600 px-3 py-1.5 rounded-xl text-xs font-bold text-lime-300">
+          <span class="w-2.5 h-2.5 rounded-full bg-lime-400 animate-pulse"></span>
+          <span id="autosave-text">Guardado local listo</span>
+        </div>
+
+        <button type="button" onclick="downloadBackup()" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold text-xs px-3 py-2 rounded-xl shadow transition cursor-pointer flex items-center gap-1">
+          <span>⬇ Descargar JSON ▶</span>
+        </button>
+
+        <label class="bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-extrabold text-xs px-3 py-2 rounded-xl shadow transition cursor-pointer flex items-center gap-1">
+          <span>⬆ Cargar JSON ▶</span>
+          <input type="file" id="json-upload" accept=".json,application/json" class="sr-only-file" onchange="handleFileUpload(event)" />
+        </label>
+      </div>
+    </div>
+
+    <!-- Barra de Progreso Global -->
+    <div class="bg-purple-950 px-4 py-1.5">
+      <div class="max-w-6xl mx-auto flex flex-wrap items-center gap-x-3 gap-y-1">
+        <span class="text-xs font-extrabold text-yellow-300">Avance del Taller: <span id="progress-percent">0%</span></span>
+        <div class="flex-1 min-w-[8rem] bg-purple-800 rounded-full h-2.5 overflow-hidden border border-purple-600">
+          <div id="progress-bar" class="bg-lime-400 h-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (COLOR BLOCKING AMARILLO i3) -->
+  <section class="bg-yellow-400 border-b-4 border-white py-8 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+      <div class="lg:col-span-8 space-y-3">
+        <span class="inline-block bg-purple-800 text-white text-xs font-black uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow">
+          Taller Práctico Grupal • 45 Minutos
+        </span>
+        <h1 class="text-2xl sm:text-4xl font-black text-slate-950 leading-tight">
+          Clínica de Hojas de Vida: Del Adjetivo al Desempeño
+        </h1>
+        <p class="text-sm sm:text-lg font-bold text-slate-900 leading-relaxed">
+          Hoy operamos sus propias hojas de vida en equipo. Van a eliminar las frases de relleno y reemplazarlas por <span class="bg-white px-2 py-0.5 rounded-lg font-black text-purple-900">evidencias reales de lo que saben hacer</span> y cómo lo miden en un cargo técnico.
+        </p>
+      </div>
+
+      <!-- Mascota Brote/Llama i3 con Lupa Sticker 3D -->
+      <div class="lg:col-span-4 flex justify-center">
+        <div class="sticker-card bg-white p-4 flex flex-wrap justify-center items-center gap-4 max-w-sm">
+          <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-cyan-500 via-lime-400 to-yellow-400 flex items-center justify-center shrink-0 border-2 border-slate-900 shadow-inner">
+            <svg class="w-14 h-14" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40 10C28 24 22 36 22 48C22 59 30 68 40 68C50 68 58 59 58 48C58 36 52 24 40 10Z" fill="#84CC16" stroke="#0F172A" stroke-width="3.5"/>
+              <path d="M40 22C34 31 30 39 30 47C30 54 34.5 60 40 60C45.5 60 50 54 50 47C50 39 46 31 40 22Z" fill="#FACC15"/>
+              <circle cx="34" cy="45" r="3.5" fill="#0F172A"/>
+              <circle cx="46" cy="45" r="3.5" fill="#0F172A"/>
+              <circle cx="35" cy="44" r="1.2" fill="#FFFFFF"/>
+              <circle cx="47" cy="44" r="1.2" fill="#FFFFFF"/>
+              <path d="M35 52C37 55 43 55 45 52" stroke="#0F172A" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="57" cy="54" r="9" fill="#06B6D4" fill-opacity="0.45" stroke="#7C3AED" stroke-width="3.5"/>
+              <line x1="63.5" y1="60.5" x2="71" y2="68" stroke="#7C3AED" stroke-width="4.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xs font-black uppercase text-pink-600">Consejo i3</span>
+            <p class="text-xs sm:text-sm font-extrabold text-slate-900 leading-snug">
+              "Si entiendes cómo una empresa mide una competencia, sabes exactamente qué escribir en tu hoja de vida."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-10 flex-grow min-w-0 w-full">
+
+    <!-- RUTA DE TRABAJO AUTÓNOMO (GUÍA PASO A PASO) -->
+    <section class="sticker-card bg-white p-6">
+      <div class="flex flex-wrap items-center gap-2 mb-4">
+        <span class="bg-pink-500 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Ruta de Trabajo Autónomo</span>
+        <h2 class="text-lg sm:text-xl font-black text-slate-900">¿Cómo completar la Clínica de Hojas de Vida en 45 minutos?</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-orange-50 border-2 border-orange-400 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-orange-500 text-white font-black flex items-center justify-center mb-2">1</div>
+          <h3 class="font-black text-slate-900 text-sm">Fase 1: Caza de Humo (10 min)</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Revisan en equipo sus hojas de vida actuales y detectan adjetivos vacíos o verbos prohibidos.</p>
+        </div>
+        <div class="bg-cyan-50 border-2 border-cyan-400 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-cyan-500 text-white font-black flex items-center justify-center mb-2">2</div>
+          <h3 class="font-black text-slate-900 text-sm">Fase 2: Cirugía HV (20 min)</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Reescriben el <strong>Antes y Después</strong> de cada integrante usando la Tríada, la fórmula y el nivel real.</p>
+        </div>
+        <div class="bg-purple-50 border-2 border-purple-400 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-purple-700 text-white font-black flex items-center justify-center mb-2">3</div>
+          <h3 class="font-black text-slate-900 text-sm">Fase 3: Filtro del Jefe (10 min)</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Se hacen preguntas de verificación en 30 segundos entre compañeros y registran el ajuste final.</p>
+        </div>
+        <div class="bg-lime-50 border-2 border-lime-500 rounded-2xl p-4">
+          <div class="w-8 h-8 rounded-xl bg-lime-400 text-slate-950 font-black flex items-center justify-center mb-2">4</div>
+          <h3 class="font-black text-slate-900 text-sm">Entrega y PDF (5 min)</h3>
+          <p class="text-xs font-semibold text-slate-700 mt-1">Al llegar al 100%, hacen clic en <strong>"Enviar Trabajo ▶"</strong> y descargan su tabla consolidada en PDF.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 0: REGISTRO DE IDENTIDAD DEL EQUIPO CONSULTOR -->
+    <section id="sec-0" class="sticker-card bg-purple-900 text-white p-6 sm:p-8">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+        <div>
+          <span class="bg-lime-400 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full">Punto 0 • Identificación del Equipo</span>
+          <h2 class="text-xl sm:text-2xl font-black mt-2">Datos del Grupo Consultor (3 a 4 Estudiantes)</h2>
+        </div>
+        <span class="text-xs font-bold bg-purple-800 border border-purple-500 px-3 py-1.5 rounded-xl text-yellow-300">
+          Siguiente: Fase 1 (Caza de Adjetivos Vacíos) ▶
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div>
+          <label for="input-actividad-id" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            ID de Actividad (Fijo)
+          </label>
+          <input type="text" id="input-actividad-id" name="actividad_id" value="I3perfiles2_ACT02" readonly
+            class="w-full px-3.5 py-2.5 rounded-xl bg-purple-950 text-lime-300 font-black border-2 border-purple-600 opacity-85 cursor-not-allowed text-sm" />
+        </div>
+
+        <div>
+          <label for="input-materia" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Programa / Módulo *
+          </label>
+          <input type="text" id="input-materia" name="materia" value="Perfiles Laborales 2 - Instituto i3" data-track="true"
+            placeholder="Ej. Auxiliar Administrativo / Talento Humano"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-purple-400 text-sm" />
+        </div>
+
+        <div>
+          <label for="input-grupo" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Número de Equipo / Grupo *
+          </label>
+          <input type="text" id="input-grupo" name="grupo" data-track="true"
+            placeholder="Ej. Equipo 2 - Jornada Mañana"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-purple-400 text-sm" />
+        </div>
+
+        <div>
+          <label for="input-fecha" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Fecha de Sesión
+          </label>
+          <input type="date" id="input-fecha" name="fecha"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-purple-400 text-sm" />
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-4">
+          <label for="input-participantes" class="block text-xs font-extrabold uppercase tracking-wider text-yellow-300 mb-1.5">
+            Nombres Completos de Todos los Integrantes del Equipo *
+          </label>
+          <input type="text" id="input-participantes" name="participantes" data-track="true"
+            placeholder="Escribe aquí los nombres completos de los 3 o 4 integrantes del equipo..."
+            class="w-full px-3.5 py-2.5 rounded-xl bg-white text-slate-900 font-bold border-2 border-purple-400 text-sm" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FASE 1: DIAGNÓSTICO EN EQUIPO - CAZA DE ADJETIVOS VACÍOS (10 MIN) -->
+    <section id="sec-1" class="sticker-card bg-orange-500 p-6 sm:p-8 text-white">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+        <div>
+          <span class="bg-slate-950 text-yellow-400 text-xs font-black uppercase px-3 py-1 rounded-full">Fase 1 • Diagnóstico (10 min)</span>
+          <h2 class="text-2xl sm:text-3xl font-black mt-2">Caza de Adjetivos Vacíos en sus Hojas de Vida</h2>
+        </div>
+        <span class="text-xs font-extrabold bg-orange-600 border border-white/40 px-3 py-1.5 rounded-xl">
+          Siguiente: Fase 2 (Cirugía de Hojas de Vida) ▶
+        </span>
+      </div>
+
+      <p class="text-sm sm:text-base font-bold text-orange-50 mb-5 bg-orange-600/70 p-4 rounded-2xl border border-white/30">
+        Lean en voz alta el perfil profesional y las funciones que hoy tienen escritas en sus hojas de vida (si alguno aún no tiene HV, escriba cómo se presentaría hoy ante un jefe). Subrayen o anoten las frases <strong>"humo"</strong> y los verbos prohibidos (<em>saber, conocer, comprender, apoyar</em>) que no demuestran qué problema saben resolver.
+      </p>
+
+      <!-- Tarjeta de Referencia Rápida -->
+      <div class="comic-bubble bg-white text-slate-900 p-5 mb-6">
+        <span class="inline-block bg-pink-500 text-white text-xs font-black uppercase px-3 py-1 rounded-full mb-2">
+          Ejemplos de frases que NO sirven en una Hoja de Vida
+        </span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs sm:text-sm font-extrabold text-slate-800 mt-2">
+          <div class="bg-pink-50 border border-pink-200 p-3 rounded-xl">❌ "Persona proactiva, dinámica y responsable"</div>
+          <div class="bg-pink-50 border border-pink-200 p-3 rounded-xl">❌ "Con ganas de aprender y salir adelante"</div>
+          <div class="bg-pink-50 border border-pink-200 p-3 rounded-xl">❌ "Conocimiento en atención al cliente"</div>
+          <div class="bg-pink-50 border border-pink-200 p-3 rounded-xl">❌ "Apoyo en labores generales de oficina"</div>
+        </div>
+      </div>
+
+      <!-- Input Ítem 1 -->
+      <div class="bg-white text-slate-900 rounded-2xl p-5 border-4 border-yellow-300">
+        <label for="item-1" class="block text-sm sm:text-base font-black text-purple-900 mb-2">
+          1. Inventario de Frases Débiles del Equipo: Escriban 4 frases débiles o llenas de "humo" que encontraron al revisar las hojas de vida de los integrantes del grupo (1 por cada compañero). *
+        </label>
+        <textarea id="item-1" name="item1" rows="3" data-track="true"
+          placeholder="1) Integrante 1 tenía escrito: '...'&#10;2) Integrante 2 tenía escrito: '...'&#10;3) Integrante 3 tenía escrito: '...'&#10;4) Integrante 4 (si aplica): '...'"
+          class="w-full p-3.5 rounded-xl border-2 border-slate-300 text-sm font-semibold text-slate-800"></textarea>
+      </div>
+    </section>
+
+    <!-- FASE 2: CIRUGÍA Y REESCRITURA CON HERRAMIENTAS DE PERFIL (20 MIN) -->
+    <section id="sec-2" class="sticker-card bg-cyan-500 p-6 sm:p-8 text-slate-950">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+        <div>
+          <span class="bg-purple-900 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Fase 2 • Cirugía Práctica (20 min)</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white drop-shadow mt-2">Reescritura: Antes vs. Después en su Hoja de Vida</h2>
+        </div>
+        <span class="text-xs font-extrabold bg-white text-purple-900 px-3 py-1.5 rounded-xl shadow">
+          Siguiente: Fase 3 (Filtro del Jefe Real) ▶
+        </span>
+      </div>
+
+      <!-- Banner Visual de los 3 Filtros Prácticos -->
+      <div class="sticker-card bg-purple-900 text-white p-5 mb-6 space-y-4">
+        <h3 class="text-base sm:text-lg font-black text-yellow-400">🛠️ Los 3 Filtros Obligatorios para Operar cada Hoja de Vida</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
+          <div class="bg-purple-800 border-2 border-cyan-400 rounded-2xl p-4">
+            <span class="bg-cyan-400 text-slate-950 font-black px-2.5 py-0.5 rounded-full text-xs">Filtro 1 • Tríada</span>
+            <p class="font-bold mt-2 text-purple-100">
+              No basta decir "sé de X". Muestra <strong>Qué sabes</strong> (norma/dato) + <strong>Qué sabes hacer</strong> (herramienta/tarea) + <strong>Cómo sabes ser</strong> (actitud/hábito).
+            </p>
+          </div>
+          <div class="bg-purple-800 border-2 border-pink-400 rounded-2xl p-4">
+            <span class="bg-pink-500 text-white font-black px-2.5 py-0.5 rounded-full text-xs">Filtro 2 • Fórmula</span>
+            <p class="font-bold mt-2 text-purple-100">
+              Usa siempre: <span class="text-yellow-300 font-black">Verbo Observable + Objeto + Condición de Calidad</span>. Prohibido usar <em>saber, conocer o apoyar</em>.
+            </p>
+          </div>
+          <div class="bg-purple-800 border-2 border-lime-400 rounded-2xl p-4">
+            <span class="bg-lime-400 text-slate-950 font-black px-2.5 py-0.5 rounded-full text-xs">Filtro 3 • Nivel Real</span>
+            <p class="font-bold mt-2 text-purple-100">
+              Redacta como <strong>Nivel 1 (Operativo / Auxiliar)</strong> o <strong>Nivel 2 (Técnico)</strong>, sin prometer funciones de gerente que no corresponden al cargo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Banco Rápido de Verbos Observables -->
+        <div class="bg-purple-950/90 border border-purple-500 rounded-xl p-3 text-xs text-purple-100">
+          <strong class="text-cyan-300">💡 Verbos observables recomendados para empezar:</strong>
+          <span class="font-bold">Registra, Verifica, Clasifica, Atiende, Consolida, Liquida, Organiza, Reporta, Digita, Controla, Resuelve, Despacha.</span>
+        </div>
+
+        <div class="bg-yellow-400 text-slate-950 p-3.5 rounded-xl font-extrabold text-xs sm:text-sm">
+          ✅ <strong>Ejemplo Real (Auxiliar Administrativo / Servicio):</strong><br>
+          <em>Antes:</em> "Persona proactiva y buena en servicio al cliente."<br>
+          <em>Después:</em> <strong>"Atiende solicitudes y reclamos telefónicos registrando cada caso en el sistema sin errores de facturación ni retrasos en el turno."</strong>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base font-extrabold text-slate-950 bg-white/90 p-4 rounded-2xl mb-6 border-2 border-white">
+        Completen las tarjetas de <strong>Integrante 1, 2 y 3 (obligatorias)</strong>. Si su equipo tiene 4 personas, diligencien los 4 campos de la tarjeta del <strong>Integrante 4 (opcional)</strong>.
+      </p>
+
+      <!-- TARJETAS POR INTEGRANTE -->
+      <div class="space-y-6">
+
+        <!-- INTEGRANTE 1 (OBLIGATORIO) -->
+        <div class="sticker-card bg-white p-5 sm:p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="bg-purple-800 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Integrante 1 • Obligatorio</span>
+            <span class="text-xs font-extrabold text-slate-500">Transformación de Perfil HV</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="int1-nombre" class="block text-xs font-black text-purple-900 mb-1">Nombre del Integrante 1 *</label>
+              <input type="text" id="int1-nombre" data-track="true" placeholder="Nombre completo..."
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="int1-cargo" class="block text-xs font-black text-purple-900 mb-1">Cargo Técnico al que Aspira *</label>
+              <input type="text" id="int1-cargo" data-track="true" placeholder="Ej. Auxiliar Administrativo / Asesor Comercial"
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-pink-50 p-3.5 rounded-2xl border border-pink-200">
+              <label for="int1-antes" class="block text-xs font-black text-pink-900 mb-1">Texto Original en su HV ("Antes") *</label>
+              <textarea id="int1-antes" rows="2" data-track="true"
+                placeholder="Copia la frase débil o llena de adjetivos que tenía antes..."
+                class="w-full p-2.5 rounded-xl border border-pink-300 text-sm font-semibold bg-white"></textarea>
+            </div>
+            <div class="bg-lime-50 p-3.5 rounded-2xl border border-lime-400">
+              <label for="int1-despues" class="block text-xs font-black text-slate-950 mb-1">Texto Corregido con Fórmula + Nivel ("Después") *</label>
+              <textarea id="int1-despues" rows="2" data-track="true"
+                placeholder="Verbo observable + Objeto + Condición de calidad (Nivel 1 o 2)..."
+                class="w-full p-2.5 rounded-xl border border-lime-500 text-sm font-semibold bg-white"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTEGRANTE 2 (OBLIGATORIO) -->
+        <div class="sticker-card bg-white p-5 sm:p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="bg-purple-800 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Integrante 2 • Obligatorio</span>
+            <span class="text-xs font-extrabold text-slate-500">Transformación de Perfil HV</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="int2-nombre" class="block text-xs font-black text-purple-900 mb-1">Nombre del Integrante 2 *</label>
+              <input type="text" id="int2-nombre" data-track="true" placeholder="Nombre completo..."
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="int2-cargo" class="block text-xs font-black text-purple-900 mb-1">Cargo Técnico al que Aspira *</label>
+              <input type="text" id="int2-cargo" data-track="true" placeholder="Ej. Auxiliar de Logística / Auxiliar Contable"
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-pink-50 p-3.5 rounded-2xl border border-pink-200">
+              <label for="int2-antes" class="block text-xs font-black text-pink-900 mb-1">Texto Original en su HV ("Antes") *</label>
+              <textarea id="int2-antes" rows="2" data-track="true"
+                placeholder="Copia la frase débil o llena de adjetivos que tenía antes..."
+                class="w-full p-2.5 rounded-xl border border-pink-300 text-sm font-semibold bg-white"></textarea>
+            </div>
+            <div class="bg-lime-50 p-3.5 rounded-2xl border border-lime-400">
+              <label for="int2-despues" class="block text-xs font-black text-slate-950 mb-1">Texto Corregido con Fórmula + Nivel ("Después") *</label>
+              <textarea id="int2-despues" rows="2" data-track="true"
+                placeholder="Verbo observable + Objeto + Condición de calidad (Nivel 1 o 2)..."
+                class="w-full p-2.5 rounded-xl border border-lime-500 text-sm font-semibold bg-white"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTEGRANTE 3 (OBLIGATORIO) -->
+        <div class="sticker-card bg-white p-5 sm:p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="bg-purple-800 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Integrante 3 • Obligatorio</span>
+            <span class="text-xs font-extrabold text-slate-500">Transformación de Perfil HV</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="int3-nombre" class="block text-xs font-black text-purple-900 mb-1">Nombre del Integrante 3 *</label>
+              <input type="text" id="int3-nombre" data-track="true" placeholder="Nombre completo..."
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="int3-cargo" class="block text-xs font-black text-purple-900 mb-1">Cargo Técnico al que Aspira *</label>
+              <input type="text" id="int3-cargo" data-track="true" placeholder="Ej. Asistente de Talento Humano / Recepcionista"
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-pink-50 p-3.5 rounded-2xl border border-pink-200">
+              <label for="int3-antes" class="block text-xs font-black text-pink-900 mb-1">Texto Original en su HV ("Antes") *</label>
+              <textarea id="int3-antes" rows="2" data-track="true"
+                placeholder="Copia la frase débil o llena de adjetivos que tenía antes..."
+                class="w-full p-2.5 rounded-xl border border-pink-300 text-sm font-semibold bg-white"></textarea>
+            </div>
+            <div class="bg-lime-50 p-3.5 rounded-2xl border border-lime-400">
+              <label for="int3-despues" class="block text-xs font-black text-slate-950 mb-1">Texto Corregido con Fórmula + Nivel ("Después") *</label>
+              <textarea id="int3-despues" rows="2" data-track="true"
+                placeholder="Verbo observable + Objeto + Condición de calidad (Nivel 1 o 2)..."
+                class="w-full p-2.5 rounded-xl border border-lime-500 text-sm font-semibold bg-white"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTEGRANTE 4 (OPCIONAL PARA EQUIPOS DE 4 - VALIDACIÓN DINÁMICA SI SE INICIA) -->
+        <div class="sticker-card bg-slate-50 p-5 sm:p-6 border-dashed border-4 border-white">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="bg-slate-700 text-white text-xs font-black uppercase px-3 py-1 rounded-full">Integrante 4 • Opcional (Solo si el equipo es de 4 personas)</span>
+            <span class="text-xs font-extrabold text-slate-500">Si inician este bloque, completen sus 4 campos</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="int4-nombre" class="block text-xs font-black text-slate-700 mb-1">Nombre del Integrante 4 (Opcional)</label>
+              <input type="text" id="int4-nombre" data-optional-group="int4" placeholder="Nombre completo (si hay 4to integrante)..."
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold bg-white" />
+            </div>
+            <div>
+              <label for="int4-cargo" class="block text-xs font-black text-slate-700 mb-1">Cargo Técnico al que Aspira (Opcional)</label>
+              <input type="text" id="int4-cargo" data-optional-group="int4" placeholder="Cargo técnico..."
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-bold bg-white" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-3.5 rounded-2xl border border-slate-200">
+              <label for="int4-antes" class="block text-xs font-black text-slate-700 mb-1">Texto Original en su HV ("Antes")</label>
+              <textarea id="int4-antes" rows="2" data-optional-group="int4" placeholder="Frase original..."
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-semibold"></textarea>
+            </div>
+            <div class="bg-white p-3.5 rounded-2xl border border-slate-200">
+              <label for="int4-despues" class="block text-xs font-black text-slate-700 mb-1">Texto Corregido con Fórmula + Nivel ("Después")</label>
+              <textarea id="int4-despues" rows="2" data-optional-group="int4" placeholder="Frase corregida..."
+                class="w-full p-2.5 rounded-xl border border-slate-300 text-sm font-semibold"></textarea>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FASE 3: VALIDACIÓN CRUZADA - EL FILTRO DEL JEFE REAL (10 MIN) -->
+    <section id="sec-3" class="sticker-card bg-purple-800 text-white p-6 sm:p-8">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+        <div>
+          <span class="bg-yellow-400 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full">Fase 3 • Validación Cruzada (10 min)</span>
+          <h2 class="text-2xl sm:text-3xl font-black mt-2">El Filtro del Jefe Real</h2>
+        </div>
+        <span class="text-xs font-extrabold bg-purple-900 border border-purple-500 px-3 py-1.5 rounded-xl text-lime-300">
+          Siguiente: Criterios de Éxito y Envío ▶
+        </span>
+      </div>
+
+      <div class="comic-bubble bg-purple-900/90 text-white p-5 mb-6 border-2 border-cyan-400">
+        <p class="text-sm sm:text-base font-bold leading-relaxed">
+          🗣️ <strong>Dinámica en Equipo:</strong> Intercambien sus hojas de vida corregidas dentro del grupo. Uno hace el papel de <strong>Jefe de Área contratante</strong> y le pregunta al dueño de la HV: <span class="text-yellow-300 italic">"Aquí dices que haces X sin errores; cuéntame en 30 segundos cómo lo haces o qué paso sigues para lograrlo"</span>. Si logra explicarlo con acciones reales, tiene visto bueno; si se enreda o vuelve a usar adjetivos, ajústenlo aquí mismo.
+        </p>
+      </div>
+
+      <div class="bg-white text-slate-900 rounded-2xl p-5 border-4 border-lime-400">
+        <label for="item-3-filtro" class="block text-sm sm:text-base font-black text-purple-900 mb-2">
+          Bitácora del Filtro del Jefe Real: ¿Qué frase sonaba bien en el papel pero tuvo que ajustarse cuando el "Jefe" pidió explicar cómo se hacía en la práctica? Escriban cómo quedó corregida. *
+        </label>
+        <textarea id="item-3-filtro" rows="3" data-track="true"
+          placeholder="Describe qué duda hizo el 'Jefe' del equipo y cómo mejoraron la redacción final para que fuera 100% demostrable..."
+          class="w-full p-3.5 rounded-xl border-2 border-slate-300 text-sm font-semibold"></textarea>
+      </div>
+    </section>
+
+    <!-- PUNTO 4: CRITERIOS DE ÉXITO Y ZONA DE ENTREGA (DOBLE CANDADO) -->
+    <section id="sec-4" class="sticker-card bg-white p-6 sm:p-8 border-4 border-purple-800">
+      <div class="mb-6">
+        <span class="bg-lime-400 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full">Fase 4 • Cierre y Entrega Oficial (5 min)</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-2">Criterios de Éxito de la Clínica de Hojas de Vida</h2>
+        <p class="text-sm font-semibold text-slate-600 mt-1">
+          Verifiquen que su entrega grupal cumpla con estos 5 criterios clave de evaluación (escala de 1.0 a 5.0):
+        </p>
+      </div>
+
+      <!-- Tabla de 5 Criterios de Éxito -->
+      <div class="overflow-x-auto mb-8 rounded-2xl border-2 border-slate-200">
+        <table class="w-full text-left border-collapse text-xs sm:text-sm">
+          <thead>
+            <tr class="bg-purple-900 text-white">
+              <th class="p-3.5 font-black">#</th>
+              <th class="p-3.5 font-black">Criterio Evaluado</th>
+              <th class="p-3.5 font-black">¿Qué demuestra un desempeño excelente (4.5 - 5.0)?</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 font-semibold text-slate-800">
+            <tr class="bg-slate-50">
+              <td class="p-3.5 font-black text-purple-800">1</td>
+              <td class="p-3.5 font-extrabold">Detección de Adjetivos Vacíos</td>
+              <td class="p-3.5">Identifica con honestidad frases "humo" y verbos mentales prohibidos en las hojas de vida reales del grupo.</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-black text-purple-800">2</td>
+              <td class="p-3.5 font-extrabold">Aplicación de la Tríada del Desempeño</td>
+              <td class="p-3.5">Integra conocimiento (Saber), ejecución técnica (Saber Hacer) y hábito laboral (Saber Ser) en las correcciones.</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3.5 font-black text-purple-800">3</td>
+              <td class="p-3.5 font-extrabold">Fórmula de Conducta Observable</td>
+              <td class="p-3.5">Redacta el "Después" usando estrictamente Verbo Observable + Objeto + Condición de Calidad.</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-black text-purple-800">4</td>
+              <td class="p-3.5 font-extrabold">Calibración al Nivel Real (Nivel 1 / 2)</td>
+              <td class="p-3.5">Ajusta el alcance de las funciones al nivel operativo o técnico del cargo aspirado, sin exageraciones gerenciales.</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="p-3.5 font-black text-purple-800">5</td>
+              <td class="p-3.5 font-extrabold">Validación en el Filtro del Jefe Real</td>
+              <td class="p-3.5">Sustenta verbalmente en 30 segundos cómo se ejecuta la conducta y documenta el ajuste final tras la prueba.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Zona de Botones con Doble Candado -->
+      <div class="bg-slate-100 rounded-2xl p-6 border-2 border-slate-300 flex flex-col items-center text-center space-y-4">
+        <div id="status-banner" class="hidden w-full max-w-2xl p-4 rounded-xl text-sm font-extrabold"></div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+          <!-- CANDADO 1: BOTÓN ENVIAR TRABAJO (BLOQUEADO HASTA 100% COMPLETITUD OBLIGATORIA) -->
+          <button type="button" id="btn-submit-sheets" onclick="submitToSheets()" disabled
+            class="w-full sm:w-auto bg-slate-300 text-slate-500 font-black text-sm sm:text-base py-3.5 px-7 rounded-xl shadow transition-all cursor-not-allowed flex items-center justify-center gap-2 border-2 border-slate-400">
+            <span id="submit-lock-icon">🔒</span>
+            <span id="submit-btn-text">Completa los campos obligatorios para enviar (0/17)</span>
+          </button>
+
+          <!-- CANDADO 2: BOTÓN EXPORTAR PDF (BLOQUEADO HASTA CONFIRMAR ENVÍO REMOTO) -->
+          <button type="button" id="btn-export-pdf" onclick="openPreview()" disabled
+            class="w-full sm:w-auto bg-slate-300 text-slate-500 font-black text-sm sm:text-base py-3.5 px-7 rounded-xl shadow transition-all cursor-not-allowed flex items-center justify-center gap-2 border-2 border-slate-400">
+            <span id="pdf-lock-icon">🔒</span>
+            <span id="pdf-btn-text">Exportar a PDF / Imprimir (Envía primero)</span>
+          </button>
+        </div>
+
+        <p class="text-xs font-bold text-slate-600 max-w-xl">
+          <strong>Flujo de Doble Candado:</strong> 1) Completa los datos del equipo, las frases débiles, los 3 integrantes obligatorios y la bitácora del Jefe Real. 2) Haz clic en <em>"Enviar Trabajo a Google Sheets ▶"</em> para desbloquear la vista previa PDF de su tabla consolidada.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL -->
+  <footer class="bg-purple-950 text-purple-200 py-5 px-4 text-center text-xs font-bold border-t-4 border-yellow-400">
+    <p>Instituto i3 • inclusión • inflexión • impacto | Módulo de Estructuración de Perfiles Laborales (Sesión 2)</p>
+  </footer>
+
+  <!-- BOTÓN SCROLL TO TOP (ESQUINA INFERIOR DERECHA - IDENTIDAD i3) -->
+  <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Volver arriba"
+    class="fixed bottom-5 right-5 z-40 w-12 h-12 rounded-full bg-white text-purple-900 border-4 border-purple-800 shadow-xl flex items-center justify-center font-black text-lg hover:bg-yellow-400 transition cursor-pointer">
+    ▲
+  </button>
+
+  <script>
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbykP5mOpfvgjO-R3aMf2t8tzAg-nc5Tc2cpVmtpRh33C-ZwYUW9G9-CWr-bq7zVEv5s/exec";
+    const ACTIVIDAD_ID = "I3perfiles2_ACT02";
+    const STORAGE_KEY = "i3_taller_I3perfiles2_ACT02_v1";
+    const SEND_TIMEOUT_MS = 25000;
+    const MIN_ID_CHARS = 3;
+    const MIN_ANSWER_CHARS = 20;
+    const SHORT_FIELD = /^(input-(materia|grupo|participantes)|int\d-(nombre|cargo))$/;
+    let isSubmitted = false;
+    let isSubmitting = false;
+    let submittedAt = null;
+    let submittedSnapshot = "";
+
+    function localDateISO() {
+      const d = new Date();
+      const p = n => String(n).padStart(2, "0");
+      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const fechaInput = document.getElementById("input-fecha");
+      if (fechaInput && !fechaInput.value) fechaInput.value = localDateISO();
+      loadFromLocalStorage();
+      syncLockStates();
+
+      document.querySelectorAll("input, textarea, select").forEach(el => {
+        if (el.type === "file") return;
+        el.addEventListener("input", () => {
+          el.classList.remove("border-pink-600", "bg-pink-50");
+          // Candado: cualquier cambio posterior al envío vuelve a bloquear el PDF
+          if (isSubmitted && currentSnapshot() !== submittedSnapshot) {
+            isSubmitted = false;
+            submittedAt = null;
+            showBanner("warning", "⚠️ Detectamos cambios en las respuestas posteriores al envío. Vuelvan a hacer clic en 'Enviar Trabajo a Google Sheets ▶' para actualizar el registro y desbloquear el PDF.");
+          }
+          saveToLocalStorage();
+          syncLockStates();
+        });
+      });
+    });
+
+    function getTrackedFields() {
+      const baseRequired = Array.from(document.querySelectorAll("[data-track='true']"));
+      const int4Fields = Array.from(document.querySelectorAll("[data-optional-group='int4']"));
+      const int4HasAnyText = int4Fields.some(el => (el.value ?? "").trim() !== "");
+      return int4HasAnyText ? baseRequired.concat(int4Fields) : baseRequired;
+    }
+
+    function minCharsFor(el) {
+      return SHORT_FIELD.test(el.id) ? MIN_ID_CHARS : MIN_ANSWER_CHARS;
+    }
+
+    // Campos que no cumplen: vacíos, solo espacios o por debajo del mínimo de caracteres
+    function getEmptyTrackedFields() {
+      return getTrackedFields().filter(el => (el.value ?? "").trim().length < minCharsFor(el));
+    }
+
+    function isFormComplete() {
+      return getEmptyTrackedFields().length === 0;
+    }
+
+    function currentSnapshot() {
+      const m = getRawFieldsMap();
+      delete m["input-actividad-id"];
+      return JSON.stringify(m);
+    }
+
+    function canPrintPDF() {
+      return isSubmitted === true && Boolean(submittedAt) && isFormComplete() && currentSnapshot() === submittedSnapshot;
+    }
+
+    function setBtnState(btn, enabled, lockedClasses, openClasses) {
+      btn.disabled = !enabled;
+      (enabled ? openClasses : lockedClasses).forEach(c => btn.classList.add(c));
+      (enabled ? lockedClasses : openClasses).forEach(c => btn.classList.remove(c));
+    }
+
+    function syncLockStates() {
+      const tracked = getTrackedFields();
+      const empty = getEmptyTrackedFields();
+      const total = tracked.length;
+      const filledCount = total - empty.length;
+      const percent = total > 0 ? Math.round((filledCount / total) * 100) : 0;
+
+      const bar = document.getElementById("progress-bar");
+      const text = document.getElementById("progress-percent");
+      if (bar) bar.style.width = percent + "%";
+      if (text) text.textContent = `${percent}% (${filledCount}/${total} obligatorios)`;
+
+      const LOCKED = ["bg-slate-300", "text-slate-500", "cursor-not-allowed", "border-slate-400"];
+      const submitBtn = document.getElementById("btn-submit-sheets");
+      const submitIcon = document.getElementById("submit-lock-icon");
+      const submitText = document.getElementById("submit-btn-text");
+      if (submitBtn && !isSubmitting) {
+        const ok = empty.length === 0;
+        setBtnState(submitBtn, ok, LOCKED, ["bg-purple-700", "hover:bg-purple-800", "text-white", "cursor-pointer", "border-purple-900", "shadow-lg"]);
+        if (submitIcon) submitIcon.textContent = ok ? "🚀" : "🔒";
+        if (submitText) submitText.textContent = ok
+          ? (isSubmitted ? "Reenviar Actualización a Google Sheets ▶" : "Enviar Trabajo a Google Sheets ▶")
+          : `Completa los campos obligatorios para enviar (${filledCount}/${total})`;
+      }
+
+      const pdfBtn = document.getElementById("btn-export-pdf");
+      const lockIcon = document.getElementById("pdf-lock-icon");
+      const pdfText = document.getElementById("pdf-btn-text");
+      if (pdfBtn) {
+        const ok = canPrintPDF();
+        setBtnState(pdfBtn, ok, LOCKED, ["bg-yellow-400", "hover:bg-yellow-300", "text-slate-950", "cursor-pointer", "border-slate-950", "shadow-lg"]);
+        if (lockIcon) lockIcon.textContent = ok ? "📄" : "🔒";
+        if (pdfText) pdfText.textContent = ok ? "Exportar a PDF / Imprimir ▶" : "Exportar a PDF / Imprimir (Envía primero)";
+      }
+    }
+
+    function getRawFieldsMap() {
+      const map = {};
+      document.querySelectorAll("input, textarea, select").forEach(el => {
+        if (el.id && el.type !== "file") map[el.id] = el.value ?? "";
+      });
+      return map;
+    }
+
+    function val(id) { return (document.getElementById(id)?.value ?? "").trim(); }
+
+    function formatIntegrante(idx) {
+      const nombre = val(`int${idx}-nombre`), cargo = val(`int${idx}-cargo`), antes = val(`int${idx}-antes`), despues = val(`int${idx}-despues`);
+      if (!nombre && !cargo && !antes && !despues) return "No aplica (Equipo de 3 integrantes)";
+      return [
+        `INTEGRANTE ${idx}: ${nombre}`,
+        `CARGO ASPIRADO: ${cargo}`,
+        `ANTES (HV ORIGINAL): ${antes}`,
+        `DESPUÉS (CORREGIDO CON FÓRMULA + NIVEL): ${despues}`
+      ].join("\n");
+    }
+
+    function getFormData() {
+      return {
+        materia: val("input-materia"),
+        actividad_id: ACTIVIDAD_ID,
+        grupo: val("input-grupo"),
+        participantes: val("input-participantes"),
+        fecha: document.getElementById("input-fecha")?.value ?? "",
+        item1: val("item-1"),
+        item2: formatIntegrante(1),
+        item3: formatIntegrante(2),
+        item4: formatIntegrante(3) + "\n\n---\n" + formatIntegrante(4),
+        item5: val("item-3-filtro"),
+        rawFields: getRawFieldsMap(),
+        estado: "Entregado"
+      };
+    }
+
+    function saveToLocalStorage() {
+      try {
+        const data = { rawFields: getRawFieldsMap(), isSubmitted: isSubmitted, submittedAt: submittedAt, submittedSnapshot: submittedSnapshot, timestamp: new Date().toISOString() };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        const badge = document.getElementById("autosave-text");
+        if (badge) badge.textContent = "Guardado local (" + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ")";
+      } catch (e) {
+        const badge = document.getElementById("autosave-text");
+        if (badge) badge.textContent = "Almacenamiento local restringido";
+      }
+    }
+
+    function applyFields(fields) {
+      const known = getRawFieldsMap();
+      let applied = 0;
+      Object.entries(fields).forEach(([id, v]) => {
+        if (id === "input-actividad-id" || !(id in known)) return;
+        const el = document.getElementById(id);
+        if (el && typeof v === "string") { el.value = v; applied++; }
+      });
+      return applied;
+    }
+
+    function loadFromLocalStorage() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (!saved) return;
+        const parsed = JSON.parse(saved);
+        if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return;
+        if (parsed.rawFields && typeof parsed.rawFields === "object") applyFields(parsed.rawFields);
+        submittedSnapshot = typeof parsed.submittedSnapshot === "string" ? parsed.submittedSnapshot : "";
+        const valid = Boolean(parsed.isSubmitted) && typeof parsed.submittedAt === "string" && parsed.submittedAt !== "" && isFormComplete() && currentSnapshot() === submittedSnapshot;
+        isSubmitted = valid;
+        submittedAt = valid ? parsed.submittedAt : null;
+        if (isSubmitted) {
+          showBanner("success", `✅ Sesión recuperada: trabajo enviado previamente el ${submittedAt}. Pueden exportar su PDF cuando lo necesiten.`);
+        }
+      } catch (e) {
+        console.warn("Error leyendo LocalStorage:", e);
+      }
+    }
+
+    function downloadBackup() {
+      const ok = canPrintPDF();
+      const backupObj = {
+        actividad_id: ACTIVIDAD_ID,
+        exportado_en: new Date().toISOString(),
+        isSubmitted: ok,
+        submittedAt: ok ? submittedAt : null,
+        rawFields: getRawFieldsMap(),
+        payload_evaluador: getFormData()
+      };
+      const blob = new Blob([JSON.stringify(backupObj, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      const grupoSafe = ((document.getElementById("input-grupo")?.value || "equipo")
+        .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zA-Z0-9_-]+/g, "_").replace(/^_+|_+$/g, "").slice(0, 40)) || "equipo";
+      a.href = url;
+      a.download = `${ACTIVIDAD_ID}_${grupoSafe}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    // Cargar respaldo: se valida el contenido y NUNCA se confía en "isSubmitted" del archivo
+    function handleFileUpload(event) {
+      const input = event.target;
+      const file = input.files && input.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) throw new Error("estructura");
+          const fields = (parsed.rawFields && typeof parsed.rawFields === "object" && !Array.isArray(parsed.rawFields)) ? parsed.rawFields : parsed;
+          const applied = applyFields(fields);
+          if (applied === 0) throw new Error("sin campos");
+          isSubmitted = false;
+          submittedAt = null;
+          submittedSnapshot = "";
+          saveToLocalStorage();
+          syncLockStates();
+          showBanner("success", "✅ Respaldo cargado. Revisen sus campos y hagan clic en «Enviar Trabajo»: el envío anterior no se reconoce desde un archivo, por seguridad deben enviar de nuevo para habilitar el PDF.");
+        } catch (err) {
+          showBanner("error", "❌ El archivo no es un respaldo válido de esta actividad. No se modificó ningún dato.");
+        } finally {
+          input.value = "";
+        }
+      };
+      reader.onerror = () => { showBanner("error", "❌ No se pudo leer el archivo."); input.value = ""; };
+      reader.readAsText(file);
+    }
+
+    function showBanner(type, message) {
+      const banner = document.getElementById("status-banner");
+      if (!banner) return;
+      banner.classList.remove("hidden", "bg-lime-100", "text-lime-900", "border-lime-500", "bg-pink-100", "text-pink-900", "border-pink-500", "bg-yellow-100", "text-yellow-900", "border-yellow-500");
+      banner.classList.add("border-2");
+      if (type === "success") banner.classList.add("bg-lime-100", "text-lime-900", "border-lime-500");
+      else if (type === "warning") banner.classList.add("bg-yellow-100", "text-yellow-900", "border-yellow-500");
+      else banner.classList.add("bg-pink-100", "text-pink-900", "border-pink-500");
+      banner.textContent = message;
+    }
+
+    async function submitToSheets() {
+      if (isSubmitting) return;
+
+      const missing = getEmptyTrackedFields();
+      if (missing.length > 0) {
+        missing.forEach(el => el.classList.add("border-pink-600", "bg-pink-50"));
+        showBanner("error", `⚠️ Faltan ${missing.length} campo(s) por completar o con muy poco texto (marcados en rosa). Cada respuesta necesita al menos ${MIN_ANSWER_CHARS} caracteres.`);
+        missing[0].scrollIntoView({ behavior: "smooth", block: "center" });
+        missing[0].focus();
+        syncLockStates();
+        return;
+      }
+
+      const payload = getFormData();
+      const serializedBody = JSON.stringify(payload);
+      const snapshotAtSend = currentSnapshot();
+
+      isSubmitting = true;
+      const btn = document.getElementById("btn-submit-sheets");
+      const submitIcon = document.getElementById("submit-lock-icon");
+      const submitText = document.getElementById("submit-btn-text");
+      if (btn) btn.disabled = true;
+      if (submitIcon) submitIcon.textContent = "⏳";
+      if (submitText) submitText.textContent = "Transmitiendo respuestas a Google Sheets...";
+      showBanner("warning", "Transmitiendo el trabajo grupal al servidor docente de Instituto i3... Por favor espera.");
+
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), SEND_TIMEOUT_MS);
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: serializedBody,
+          signal: ctrl.signal
+        });
+        // Si se editó mientras se enviaba, el envío no cubre lo nuevo: el PDF sigue bloqueado
+        if (currentSnapshot() === snapshotAtSend) {
+          isSubmitted = true;
+          submittedSnapshot = snapshotAtSend;
+          submittedAt = new Date().toLocaleString("es-CO", { dateStyle: "short", timeStyle: "medium" });
+          saveToLocalStorage();
+          showBanner("success", `✅ Trabajo enviado al sistema docente (${submittedAt}). Su navegador no puede leer la confirmación de Google, así que conserven su PDF y su respaldo JSON como evidencia. Ya pueden generar y descargar el PDF.`);
+        } else {
+          isSubmitted = false;
+          submittedAt = null;
+          showBanner("warning", "⚠️ Editaron el trabajo mientras se enviaba. Vuelvan a enviar para registrar los últimos cambios y habilitar el PDF.");
+        }
+      } catch (error) {
+        isSubmitted = false;
+        submittedAt = null;
+        saveToLocalStorage();
+        const porTiempo = error && error.name === "AbortError";
+        showBanner("error", porTiempo
+          ? "❌ El envío tardó demasiado y se canceló. Revisen su conexión e inténtenlo de nuevo. Sus respuestas siguen guardadas en este dispositivo: descarguen el respaldo JSON por seguridad."
+          : "❌ No se pudo conectar con Google Sheets. Revisen su conexión a internet e inténtenlo de nuevo. Sus respuestas siguen guardadas en este dispositivo: descarguen el respaldo JSON por seguridad.");
+      } finally {
+        clearTimeout(timer);
+        isSubmitting = false;
+        syncLockStates();
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;")
+        .replace(/\n/g, "<br>");
+    }
+
+    function buildTableRow(r, idx) {
+      const nombre = (r[`int${idx}-nombre`] ?? "").trim();
+      const cargo = (r[`int${idx}-cargo`] ?? "").trim();
+      const antes = (r[`int${idx}-antes`] ?? "").trim();
+      const despues = (r[`int${idx}-despues`] ?? "").trim();
+      if (!nombre && !cargo && !antes && !despues) return "";
+      return `
+        <tr>
+          <td><strong>${escapeHtml(nombre)}</strong></td>
+          <td>${escapeHtml(cargo)}</td>
+          <td>${escapeHtml(antes)}</td>
+          <td>${escapeHtml(despues)}</td>
+        </tr>
+      `;
+    }
+
+    function openPreview() {
+      if (!canPrintPDF()) {
+        showBanner("error", "🔒 Acceso bloqueado: primero deben completar los campos obligatorios y enviar el trabajo a Google Sheets (si editaron algo después de enviar, deben enviar de nuevo).");
+        return;
+      }
+
+      const r = getRawFieldsMap();
+      const previewWin = window.open("", "_blank");
+      if (!previewWin) {
+        showBanner("error", "⚠️ El navegador bloqueó la ventana emergente. Permitan los pop-ups para visualizar y guardar su PDF.");
+        return;
+      }
+
+      const rowsHtml = [1, 2, 3, 4].map(idx => buildTableRow(r, idx)).join("");
+
+      const htmlDoc = `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evidencia PDF - ${escapeHtml(ACTIVIDAD_ID)} - ${escapeHtml(r["input-grupo"])}</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 15mm;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #111827;
+      line-height: 1.45;
+      margin: 0;
+      padding: 20px;
+    }
+    .no-print {
+      background: #f1f5f9;
+      border: 2px solid #1e40af;
+      padding: 14px 20px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-print {
+      background: #1e40af;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .header-box {
+      border-bottom: 3px solid #1e40af;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      color: #1e40af;
+      font-size: 19px;
+      margin: 0 0 4px 0;
+    }
+    h2 {
+      color: #1e40af;
+      font-size: 14.5px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 4px;
+      margin: 20px 0 10px 0;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+    .meta-grid, .hv-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      font-size: 12px;
+      table-layout: fixed;
+    }
+    .meta-grid td, .hv-table th, .hv-table td {
+      border: 1px solid #94a3b8;
+      padding: 8px 10px;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      vertical-align: top;
+    }
+    .hv-table th {
+      background-color: #1e40af;
+      color: #ffffff;
+      text-align: left;
+    }
+    .hv-table tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .answer-box {
+      border: 1px solid #94a3b8;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      font-size: 12.5px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    .answer-label {
+      font-weight: bold;
+      color: #1e40af;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .footer-print {
+      margin-top: 24px;
+      padding-top: 8px;
+      border-top: 1px solid #cbd5e1;
+      font-size: 10.5px;
+      color: #475569;
+      text-align: right;
+    }
+    @media (max-width: 40em) {
+      body { padding: 10px; }
+      .hv-wrap { overflow-x: auto; }
+      .hv-table { min-width: 560px; }
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { padding: 0; }
+      .hv-wrap { overflow: visible; }
+      .hv-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print">
+    <div>
+      <strong>Vista Previa Oficial de Evidencia • Instituto i3</strong><br>
+      <span style="font-size:12px;color:#475569;">Haz clic en el botón para imprimir o elegir "Guardar como PDF".</span>
+    </div>
+    <button class="btn-print" onclick="window.print()">🖨️ Imprimir o Guardar como PDF</button>
+  </div>
+
+  <div class="header-box">
+    <h1>Instituto i3 • Clínica de Hojas de Vida: Del Adjetivo al Desempeño</h1>
+    <div style="font-size:12px;color:#334155;">Módulo 2: Estructuración de Perfiles • Sesión 2: Taller Práctico Grupal</div>
+  </div>
+
+  <table class="meta-grid">
+    <tr>
+      <td><strong>ID Actividad:</strong> ${escapeHtml(ACTIVIDAD_ID)}</td>
+      <td><strong>Programa / Módulo:</strong> ${escapeHtml(r["input-materia"])}</td>
+    </tr>
+    <tr>
+      <td><strong>Equipo / Grupo:</strong> ${escapeHtml(r["input-grupo"])}</td>
+      <td><strong>Fecha / Envío Remoto:</strong> ${escapeHtml(r["input-fecha"])} (${escapeHtml(submittedAt)})</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Integrantes del Equipo:</strong> ${escapeHtml(r["input-participantes"])}</td>
+    </tr>
+  </table>
+
+  <h2>Fase 1: Inventario de Frases Débiles ("Humo") Detectadas en Equipo</h2>
+  <div class="answer-box">
+    <span class="answer-label">Frases débiles o verbos prohibidos encontrados en las hojas de vida:</span>
+    ${escapeHtml(r["item-1"])}
+  </div>
+
+  <h2>Fase 2: Tabla Consolidada de Transformación de Hojas de Vida (Antes vs. Después)</h2>
+  <div class="hv-wrap"><table class="hv-table">
+    <thead>
+      <tr>
+        <th style="width:20%;">Integrante</th>
+        <th style="width:20%;">Cargo Técnico Aspirado</th>
+        <th style="width:28%;">Texto Original ("Antes")</th>
+        <th style="width:32%;">Texto Corregido con Fórmula + Nivel ("Después")</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${rowsHtml}
+    </tbody>
+  </table></div>
+
+  <h2>Fase 3: Bitácora de Validación Cruzada ("El Filtro del Jefe Real")</h2>
+  <div class="answer-box">
+    <span class="answer-label">Ajuste realizado tras la pregunta de verificación de 30 segundos:</span>
+    ${escapeHtml(r["item-3-filtro"])}
+  </div>
+
+  <div class="footer-print">
+    Instituto i3 • inclusión • inflexión • impacto | Evidencia verificada y transmitida el ${escapeHtml(submittedAt)}
+  </div>
+</body>
+</html>`;
+
+      previewWin.document.open();
+      previewWin.document.write(htmlDoc);
+      previewWin.document.close();
+    }
+  </script>
+</body>
+</html>
